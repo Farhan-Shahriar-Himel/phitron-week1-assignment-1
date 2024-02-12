@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .bg-image {
+            background-image: url("image/bannar_bg.png");
+        }
+        .bg-image-grid {
+            background-image: url("image/hero__gnfk5g59t0qe_xlarge_2x\ 1.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #ADC2D7;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                'bg-ash': '#EDEDED',
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="bg-blue-900 flex lg:gap-12 justify-between lg:justify-normal pl-8">
+                <div class="navbar-start w-[15%] lg:w-0 order-last lg:order-none">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="flex text-white w-full order-first justify-center lg:order-none gap-4">
+                    <div class="flex gap-4 items-center lg:w-44 w-full">
+                        <img class="w-8" src="image/web-logo.png" alt="">
+                        <h1 class="font-extrabold text-2xl">Shop Here</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="text" class="h-4 p-4 hidden lg:flex" placeholder="Search">
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                          <li><a>Home</a></li>
+                          <li><a>About</a></li>
+                          <li><a>Contact Us</a></li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+        </nav>
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full bg-image">
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="flex lg:flex-row flex-col w-full justify-center items-center lg:gap-24 gap-4">
+                    <div class="space-y-4 text-center lg:text-left mt-5">
+                        <p class="text-[#1E046A]">Pro.Beyond</p>
+                        <h1 class="lg:text-8xl text-6xl">I Phone 14 Pro</h1>
+                        <p>Create to change everything for the better. For everyone.</p>
+                        <button class="hidden lg:flex btn btn-primary text-xl font-extrabold text-white">Shop Now</button>
+                    </div>
+                    <div>
+                        <img class="w-52 mt-8" src="image/Iphone Image.png" alt="">
+                    </div>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+        </section>
+
+        <main>
+            <section>
+                <div class="lg:grid lg:grid-cols-2 lg:grid-rows-2">
+                    <div class="flex p-8 border">
+                        <div class="flex items-center justify-center"><img class="lg:h-auto h-[75%]" src="image/ipad.png" alt=""></div>
+                        <div class="mt-4">
+                            <h1 class="text-2xl font-bold">i Pad 9</h1>
+                            <p>Welcome to our iPad collection, where innovation meets elegance. Explore the unparalleled world of Apple's iconic tablet, designed to elevate your digital experience to new heights.</p>
+                        </div>
+                    </div>
+                    <div class="flex p-8 pr-0 row-span-2 border items-center bg-[#EDEDED]">
+                        <div class="space-y-4">
+                            <h1 class="text-2xl">Macbook <br><span class="font-extrabold">Air</span></h1>
+                            <p>Welcome to our MacBook collection, where power meets portability in the epitome of modern computing. Dive into the world of Apple's iconic laptops, crafted to redefine the way you work, create, and connect.</p>
+                            <button class="btn btn-primary text-xl font-extrabold text-white">Shop Now</button>
+                        </div>
+                        <div class=><img src="image/Group 6.png" alt=""></div>
+                    </div>
+                    <div class="p-8 border bg-image-grid text-right">
+                        <h1 class="text-2xl">Apple AirPods <br> <span class="font-extrabold">Max</span></h1>
+                        <p class="ml-32 text-white">Introducing the epitome of wireless freedom - Apple AirPods. Dive into a world of seamless connectivity, immersive sound, and unparalleled convenience with the iconic AirPods.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container mx-auto m-14 space-y-4 space-x-4 lg:space-x-0">
+                <div class="p-4 lg:p-0">
+                    <h1 class="text-2xl font-bold">Browse By Category</h1>
+                </div>
+                <div class="grid lg:grid-cols-6 lg:grid-rows-1 grid-cols-2 grid-rows-3 gap-4">
+                    <div class="border rounded-lg p-4 flex flex-col items-center justify-center bg-bg-ash">
+                        <img src="image/Phones.png" alt="">
+                        <h1>Phones</h1>
+                    </div>
+                    <div class="border rounded-lg p-4 flex flex-col items-center justify-center bg-bg-ash">
+                        <img src="image/Smart Watches.png" alt="">
+                        <h1>Smart-Watch</h1>
+                    </div>
+                    <div class="border rounded-lg p-4 flex flex-col items-center justify-center bg-bg-ash">
+                        <img src="image/Cameras.png" alt="">
+                        <h1>Cameras</h1>
+                    </div>
+                    <div class="border rounded-lg p-4 flex flex-col items-center justify-center bg-bg-ash">
+                        <img src="image/Headphones.png" alt="">
+                        <h1>Head-Phones</h1>
+                    </div>
+                    <div class="border rounded-lg p-4 flex flex-col items-center justify-center bg-bg-ash">
+                        <img src="image/computer.png" alt="">
+                        <h1>Computers</h1>
+                    </div>
+                    <div class="border rounded-lg p-4 flex flex-col items-center justify-center bg-bg-ash">
+                        <img src="image/gaming_device.png" alt="">
+                        <h1>Gaming</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container mx-auto space-y-4 p-4">
+                <div class="flex gap-8 font-semibold lg:p-0">
+                    <h1>New Arrival</h1>
+                    <h1>Best Seller</h1>
+                    <h1>Featured Product</h1>
+                </div>
+
+                <div class="grid lg:grid-cols-4 lg:grid-rows-1 grid-cols-2 grid-rows-2 gap-4 font-normal lg:font-semibold">
+                    <div class="flex flex-col items-center justify-center bg-bg-ash p-4 lg:p-8 border rounded-xl">
+                        <img src="image/Iphone 14 pro 1-2.png" alt="" class="">
+                        <h1>Apple 14 Pro Max</h1>
+                        <h1>128GB Deep Purple</h1>
+                        <h1>MQT3R/A</h1>
+                        <h1 class="font-extrabold">900$</h1>
+                        <button class="btn btn-neutral text-white">Buy Now</button>
+                    </div>
+                    <div class="flex flex-col items-center justify-center bg-bg-ash p-4 lg:p-8 border rounded-xl">
+                        <img src="image/Iphone 14 pro 1-3.png" alt="" class="">
+                        <h1>Apple 14 Pro Max</h1>
+                        <h1>128GB Deep Purple</h1>
+                        <h1>MQT3R/A</h1>
+                        <h1 class="font-extrabold">900$</h1>
+                        <button class="btn btn-neutral text-white">Buy Now</button>
+                    </div>
+                    <div class="flex flex-col items-center justify-center bg-bg-ash p-4 lg:p-8 border rounded-xl">
+                        <img src="image/Iphone 14 pro 1-1.png" alt="" class="">
+                        <h1>Apple 14 Pro Max</h1>
+                        <h1>128GB Deep Purple</h1>
+                        <h1>MQT3R/A</h1>
+                        <h1 class="font-extrabold">900$</h1>
+                        <button class="btn btn-neutral text-white">Buy Now</button>
+                    </div>
+                    <div class="flex flex-col items-center justify-center bg-bg-ash p-4 lg:p-8 border rounded-xl">
+                        <img src="image/Iphone 14 pro 1.png" alt="" class="">
+                        <h1>Apple 14 Pro Max</h1>
+                        <h1>128GB Deep Purple</h1>
+                        <h1>MQT3R/A</h1>
+                        <h1 class="font-extrabold">900$</h1>
+                        <button class="btn btn-neutral text-white">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-[#958AD4] flex lg:flex-row flex-col lg:gap-40 gap-10 py-0 lg:py-12 justify-center items-center">
+                <div class="-mt-2"><img src="image/image 19.png" alt="" class="lg:w-96 w-52"></div>
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-6xl font-extrabold text-blue-900">11.11 <span class="text-white">Sale</span></h1>
+                    <p class="text-center">For a limited time only, take advantage of our exclusive discounts and special promotions on a wide range of products. </p>
+                </div>
+                <div class="ml-64 mt-2 lg:ml-0"><img src="image/upper footer tap.png" alt="" class="lg:w-full w-52"></div>
+            </section>
+        </main>
+    </header>
+
+    <footer class="flex justify-around lg:flex-row flex-col bg-black text-white p-12 gap-8">
+        <div class="flex justify-center items-center gap-4">
+            <img src="image/web-logo.png" alt="">
+            <h1 class="text-2xl font-extrabold">SHOP HERO</h1>
+        </div>
+        <div class="lg:flex hidden justify-center items-center">
+            <img src="image/Social Icons.png" alt="">
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="lg:text-left text-center ">
+                <h1 class="text-xl font-bold">Services</h1>
+                <h1>Bonus Program</h1>
+                <h1>Gift Card</h1>
+                <h1>Credit and payment</h1>
+                <h1>Service and contact</h1>
+                <h1>Non-cash account</h1>
+                <h1>Payment</h1>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="text-center lg:text-left">
+                <h1 class="text-xl font-bold">Assistance to the buyer</h1>
+                <h1>Find an order</h1>
+                <h1>Exchange and return goods</h1>
+                <h1>Guarantee</h1>
+                <h1>FAQ</h1>
+                <h1>Terms & conditions</h1>
+            </div>
+        </div>
+        <div class="flex lg:hidden justify-center items-center">
+            <img src="image/Social Icons.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
